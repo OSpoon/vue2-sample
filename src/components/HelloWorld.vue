@@ -1,7 +1,8 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <h3>{{$store.state.count}}</h3>
+    <h3>count : {{$store.state.count}}</h3>
+    <h3>double count : {{$store.getters.doubleCounter}}</h3>
     <div>
       <button @click="increment">increment</button>
     </div>
